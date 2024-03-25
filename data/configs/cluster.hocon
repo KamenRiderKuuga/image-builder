@@ -32,7 +32,7 @@ authentication = [
       verify = verify_peer
       versions = [tlsv1.3, tlsv1.2]
     }
-    url = "http://iot-link-datahub/api/iot-link/auth/v1/das0001/auth"
+    url = "http://192.168.100.26:32516/api/iot-link/auth/v1/das0001/auth"
   }
 ]
 bridges {
@@ -67,7 +67,7 @@ bridges {
         verify = verify_peer
         versions = [tlsv1.3, tlsv1.2]
       }
-      url = "http://iot-link-datahub/api/iot-link/auth/v1/das0001/disconnected"
+      url = "http://192.168.100.26:32516/api/iot-link/auth/v1/das0001/disconnected"
     }
   }
 }
@@ -94,7 +94,7 @@ gateway {
       pool_size = 8
       request_timeout = 5s
       ssl {enable = false, verify = verify_peer}
-      url = "http://iot-link-datahub/api/iot-link/auth/v1/das0001/auth"
+      url = "http://192.168.100.26:32516/api/iot-link/auth/v1/das0001/auth"
     }
     connection_required = true
     enable = true
