@@ -5,7 +5,7 @@ on:
     tags:
       - "v*.*"
 env:
-  IMAGE_NAME: openjdk-das #这是您的镜像名
+  IMAGE_NAME: emqx-das #这是您的镜像名
 jobs:
   get-tags:
     runs-on: ubuntu-20.04
@@ -48,5 +48,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ${{ env.REGISTRY }}/${{ env.OWNER_LC }}/${{ env.IMAGE_NAME }}:22.3.1
+            ${{ env.REGISTRY }}/${{ env.OWNER_LC }}/${{ env.IMAGE_NAME }}:5.3.0
             ${{ env.REGISTRY }}/${{ env.OWNER_LC }}/${{ env.IMAGE_NAME }}:latest
