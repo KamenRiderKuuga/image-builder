@@ -1,0 +1,28 @@
+{
+    "authors": [
+        "tsq"
+    ],
+    "builder": {
+        "contact": "anonymous@example.org",
+        "name": "share instance plugin",
+        "website": "http://example.com"
+    },
+    "built_on_otp_release": "25",
+    "compatibility": {
+        "emqx": "~> 5.0"
+    },
+    "date": "2024-04-24",
+    "description": "share instance plugin.",
+    "functionality": [
+        "Demo"
+    ],
+    "git_ref": "unknown",
+    "metadata_vsn": "0.1.0",
+    "name": "share_instance_plugin",
+    "rel_apps": [
+        "share_instance_plugin-0.1.0",
+        "map_sets-1.1.0"
+    ],
+    "rel_vsn": "1.0.0",
+    "repo": "https://github.com/emqx/emqx-plugin-template"
+}
