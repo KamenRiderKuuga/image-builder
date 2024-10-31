@@ -1,0 +1,29 @@
+{
+    "authors": [
+        "guoh"
+    ],
+    "builder": {
+        "contact": "wpfmaker@gmail.com",
+        "name": "guoh",
+        "website": "https://github.com/KamenRiderKuuga"
+    },
+    "built_on_otp_release": "25",
+    "compatibility": {
+        "emqx": "~> 5.7"
+    },
+    "description": "EMQX plugin for targeted message delivery",
+    "functionality": [
+        "Demo"
+    ],
+    "git_commit_or_build_date": "2024-10-31",
+    "git_ref": "unknown",
+    "metadata_vsn": "0.1.0",
+    "name": "distribution_emqx_plugin25",
+    "rel_apps": [
+        "distribution_emqx_plugin25-0.1.0",
+        "map_sets-1.1.0"
+    ],
+    "rel_vsn": "1.0.0",
+    "repo": "https://github.com/emqx/emqx-plugin-template",
+    "with_config_schema": false
+}

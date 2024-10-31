@@ -1,6 +1,6 @@
-# distribution_emqx_plugin
+# distribution_emqx_plugin25
 
-Another amazing EMQX plugin.
+用于定向投递消息的EMQX插件
 
 ## Release
 
