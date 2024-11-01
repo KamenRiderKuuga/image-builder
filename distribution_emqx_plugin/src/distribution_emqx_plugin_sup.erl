@@ -1,4 +1,4 @@
--module(distribution_emqx_plugin25_sup).
+-module(distribution_emqx_plugin_sup).
 
 -behaviour(supervisor).
 

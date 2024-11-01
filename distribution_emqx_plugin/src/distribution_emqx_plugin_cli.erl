@@ -1,4 +1,4 @@
--module(distribution_emqx_plugin25_cli).
+-module(distribution_emqx_plugin_cli).
 
 %% This is an example on how to extend `emqx ctl` with your own commands.
 

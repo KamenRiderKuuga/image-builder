@@ -1,4 +1,4 @@
--module(distribution_emqx_plugin25).
+-module(distribution_emqx_plugin).
 
 %% for #message{} record
 %% no need for this include if we call emqx_message:to_map/1 to convert it to a map
