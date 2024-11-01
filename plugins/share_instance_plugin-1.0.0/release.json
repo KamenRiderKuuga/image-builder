@@ -1,6 +1,6 @@
 {
     "authors": [
-        "Anonymous"
+        "tangsq"
     ],
     "builder": {
         "contact": "anonymous@example.org",
@@ -16,7 +16,7 @@
         "Demo"
     ],
     "git_commit_or_build_date": "2024-11-01",
-    "git_ref": "773cf7781d3566511fa8dfd5c62bd27efde97235",
+    "git_ref": "d573b1d81b0712159b7e5cdc498aad9aafac169d",
     "metadata_vsn": "0.1.0",
     "name": "share_instance_plugin",
     "rel_apps": [
