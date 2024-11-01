@@ -1,4 +1,4 @@
-# distribution_emqx_plugin25
+# distribution_emqx_plugin
 
 用于定向投递消息的EMQX插件
 
