@@ -70,13 +70,19 @@ to_string(Value) ->
 
 on_message_delivered(_ClientInfo = #{clientid := ClientId}, Message, _Env) ->
     OldTopic = emqx_message:topic(Message),
-    case get_instance_param(to_string(ClientId)) of
-        {ok, Instance} ->
-            NewTopic = sub_instance_to_topic(Instance, OldTopic),
-            ModifiedMessage = Message#message{topic = NewTopic},
-            {ok, ModifiedMessage};
-        error ->
-            {ok, Message}
+    %% 检查 OldTopic 的长度
+    if
+        length(OldTopic) < 5 ->
+            {ok, Message};
+        true ->
+            case get_instance_param(to_string(ClientId)) of
+                {ok, Instance} ->
+                    NewTopic = sub_instance_to_topic(Instance, OldTopic),
+                    ModifiedMessage = Message#message{topic = NewTopic},
+                    {ok, ModifiedMessage};
+                error ->
+                    {ok, Message}
+            end
     end.
 
 sub_instance_to_topic(Instance, Topic) ->

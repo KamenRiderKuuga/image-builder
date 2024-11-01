@@ -54,11 +54,11 @@ on_message_delivered(
                     ModifiedMessage = Message#message{payload = StrippedPayload},
                     {ok, ModifiedMessage};
                 false ->
-                    ModifiedMessage = Message#message{payload = <<>>, topic = <<110>>},
+                    ModifiedMessage = Message#message{payload = <<>>, topic = "n"},
                     {ok, ModifiedMessage}
             end;
         error ->
-            ModifiedMessage = Message#message{payload = <<>>, topic = <<110>>},
+            ModifiedMessage = Message#message{payload = <<>>, topic = "n"},
             {ok, ModifiedMessage}
     end.
 
