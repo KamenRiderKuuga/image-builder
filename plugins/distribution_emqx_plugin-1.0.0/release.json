@@ -16,7 +16,7 @@
         "Demo"
     ],
     "git_commit_or_build_date": "2024-11-01",
-    "git_ref": "773cf7781d3566511fa8dfd5c62bd27efde97235",
+    "git_ref": "0bb213d935023706a5d87794a7759e9f51699daf",
     "metadata_vsn": "0.1.0",
     "name": "distribution_emqx_plugin",
     "rel_apps": [
